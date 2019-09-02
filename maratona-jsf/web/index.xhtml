@@ -10,6 +10,19 @@
 <p:importEnum type="br.com.devdojo.maratonajsf.model.enums.Turno"
               var="Turno"
               allSuffix="ALL_ENUM_VALUES" />
-<h:outputLabel value="Turno:"/><br/>
-      <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/><br/>
+<h:outputLabel value="Turno:"/>
+<br/>
+<h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/>
+<br/>
+<br/>
+<br/>
+<ui:repeat value="#{estudanteRegistrarBean.nome}" var="nomes">
+      <h:outputLabel value="#{nomes}, "/>
+</ui:repeat>
+<br/>
+<br/>
+<br/>
+<ui:repeat value="#{estudanteRegistrarBean.nomeList}" var="nomes">
+      <h:outputLabel value="#{nomes}, "/>
+</ui:repeat>
 </html>
