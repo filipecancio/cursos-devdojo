@@ -16,13 +16,13 @@
 <br/>
 <br/>
 <br/>
-<ui:repeat value="#{estudanteRegistrarBean.nome}" var="nomes">
-      <h:outputLabel value="#{nomes}, "/>
+<ui:repeat value="#{estudanteRegistrarBean.nome}" var="nomes" varStatus="status">
+      <h:outputLabel value="#{status.index + 1}. #{nomes}"/><br/>
 </ui:repeat>
 <br/>
 <br/>
 <br/>
-<ui:repeat value="#{estudanteRegistrarBean.nomeList}" var="nomes">
-      <h:outputLabel value="#{nomes}, "/>
+<ui:repeat value="#{estudanteRegistrarBean.nomeList}" var="nomes" varStatus="status">
+      <h:outputLabel value="#{nomes eq status.last ? nomes.concat(', '): nomes }"/>
 </ui:repeat>
 </html>
