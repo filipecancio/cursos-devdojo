@@ -19,3 +19,4 @@
 *.log
 *.ctxt
 .mtj.tmp/
+target/
