@@ -4,7 +4,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-      <h:outputLabel value="Aluno:"/><br/>
-      <h:outputLabel value="#{estudanteRegistrarBean.nome}"/><br/>
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:p="http://primefaces.org/ui">
+
+<p:importEnum type="br.com.devdojo.maratonajsf.model.enums.Turno"
+              var="Turno"
+              allSuffix="ALL_ENUM_VALUES" />
+<h:outputLabel value="Turno:"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/><br/>
 </html>
