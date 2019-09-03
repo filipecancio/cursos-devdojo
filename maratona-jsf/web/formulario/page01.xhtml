@@ -7,7 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
     <h:body>
-        <h:outputText value="Página 02"/>
+        <h:outputText value="Página 01"/>
         <br/>
         <br/>
         <br/>
@@ -22,8 +22,8 @@
                 <h:outputText value="#{testRequestBean.ofertaSelecionado}"/>
                 <br/>
                 <h:commandButton actionListener="#{testRequestBean.selecionarOferta()}" value="Selecionar"/><br/><br/>
-                <h:commandButton value="voltar sem redirect" action="page01"/><br/><br/>
-                <h:commandButton value="voltar com redirect" action="page01?faces-redirect=true"/><br/><br/>
+                <h:commandButton value="voltar sem redirect" action="page02"/><br/><br/>
+                <h:commandButton value="voltar com redirect" action="page02?faces-redirect=true"/><br/><br/>
             </h:form>
             <h:form>
                 <h:outputText value="#{testSectionBean.nome}"/>
@@ -34,8 +34,8 @@
                 <h:outputText value="#{testSectionBean.ofertaSelecionado}"/>
                 <br/>
                 <h:commandButton actionListener="#{testSectionBean.selecionarOferta()}" value="Selecionar"/><br/><br/>
-                <h:commandButton value="voltar" action="page01"/><br/><br/>
-                <h:commandButton value="voltar*" action="page01?faces-redirect=true"/><br/><br/>
+                <h:commandButton value="voltar" action="page02"/><br/><br/>
+                <h:commandButton value="voltar*" action="page02?faces-redirect=true"/><br/><br/>
                 <h:commandButton value="Logout" action="#{testSectionBean.logout()}"/><br/><br/>
             </h:form>
         </h:panelGrid>
