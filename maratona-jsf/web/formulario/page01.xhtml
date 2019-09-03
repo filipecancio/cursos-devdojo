@@ -38,6 +38,18 @@
                 <h:commandButton value="voltar*" action="page02?faces-redirect=true"/><br/><br/>
                 <h:commandButton value="Logout" action="#{testSectionBean.logout()}"/><br/><br/>
             </h:form>
+            <h:form>
+                <h:outputText value="#{testViewBean.nome}"/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h:outputText value="#{testViewBean.ofertaSelecionado}"/>
+                <br/>
+                <h:commandButton actionListener="#{testViewBean.selecionarOferta()}" value="Selecionar"/><br/><br/>
+                <h:commandButton value="voltar" action="page02"/><br/><br/>
+                <h:commandButton value="voltar*" action="page02?faces-redirect=true"/>
+            </h:form>
         </h:panelGrid>
     </h:body>
 </h:head>
